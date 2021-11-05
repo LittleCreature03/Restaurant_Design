@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<head>
+    <title>My first website practice program</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <link rel="stylesheet" href="restaurant.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <script>
+        var images = ["./tiffin/poori.jpg","prestige.png","awe2.jpg","./veg/banana.png","./tiffin/parotta.jpg","super.jpg"];
+        var i = 0;
+        var renew = setInterval(function(){
+            if(images.length == i){
+                i = 0;
+            }
+            else {
+            document.getElementById("bannerImage").src = images[i]; 
+            i++;
+            }
+            },1500);
+    </script>
+</head>
+
+
+<body>
+
+    <!--- This div classes contains the content of top nav  bar- Home,Contact,book etc..,-->
+    
+    <div id="book" style="display:none">
+        <p>Book Table now   </p>
+    </div>
+
+
+    <div class="off" id="offer" style="display:none">
+        <p>
+        <ul>
+                <li>Today's Offers</li>
+                <li>Sunday Offers</li>
+                <li>Festival Offers</li>
+        </ul>
+        </p>
+    </div>
+
+
+    <div id="orders" style="display:none">
+        <p>
+        <ul><li>
+                <a href="#" >Today's Offers</a>
+                <a href="#" >Sunday Offers</a>
+                <a href="#" >Festival Offers</a>
+            </li></ul>
+        </p>
+    </div>
+
+
+    <div id="contact" style="display:none">
+        <p>
+        <ul><li>
+                <a href="#" >Today's Offers</a>
+                <a href="#" >Sunday Offers</a>
+                <a href="#" >Festival Offers</a>
+            </li></ul>
+        </p>
+    </div>
+
+
+
+
+    <div class="outline">
+       
+        <h1>       Chandriya  Restaurant   </h1>
+        
+            <h4><span>A Palace  of  Food</span></h4>
+
+        <div class="bar">
+             
+            <ul>
+                <h6>
+                    <li><a onclick="myfunction('home')" >Home</a><i class="fas fa-home"></i></li>
+                    <li><a onclick="myfunction('offer')" >Offers</a><i class="fas fa-user"></i></li>
+                    <li><a onclick="myfunction('orders')" >Orders n  Services</a><i class="fas fa-clone"></i></li>
+                    <li><a onclick="myfunction('book')">Book Table</a><i class="fas fa-clone"></i></li>
+                    <li><a onclick="myfunction('contact')">Contact</a><i class="fas fa-phone"></i></li>
+                    
+                    
+
+                </h6>
+            </ul>
+            
+         </div>
+
+         
+
+         </div>
+
+         <marquee>
+            <h2>
+                we offer Delivery  too!  Limited Charges  Apply
+            </h2>
+        </marquee>
+
+
+    <div class="sidebar">
+       
+            <ul>
+                <h2>
+                <li><a href="./veg.html" >Vegetarian Special</a></li>
+                <li><a href="./nonveg.html " >Non-Vegetarian Special</a></li>
+                <li><a href="./chettind.html" >Chettinadu Special</a></li>
+                <li><a href="./kerala.html" >Kerala Special</a></li>
+                <li><a href="./biriyani.html" >Biriyani Special</a></li>
+                <li><a href="./Fastfood.html" >Fast  Foods</a></li>
+                <li><a href="./bakery.html" >Bakery items</a></li>
+                <li><a href="./drinks.html" >Hot n Cool Drinks</a></li>
+                <li><a href="./snacks.html" >Hot Spicy Snacks</a></li>
+                <li><a href="./sweets.html" >Sweets</a></li>
+                <li><a href="./tiffin.html" >Tiffin Items</a></li>
+                <li><a href="./Dessert.html" >Dessert</a></li>
+                <li><a href="./icecream.html" >Icecream</a></li>
+
+
+
+                </h2>
+
+
+            </ul>
+
+  </div>
+
+  
+
+    
+     
+
+        <div class="center" id="demo" >
+
+            
+            <h2>
+                Chandriya !!  Food  Made  with  Love
+            </h2>
+            <img id="bannerImage" src="ad.jpg" width="694" height="83" alt="some text">
+            <br>
+
+            <p>
+                Welcome  to Chandriya  Restaurant,TamilNadu's No.1 Restaurant. <br>
+                 you can avail variety of food items ranging from Traditional to Fast Foods.<br>
+                We provide different cuisines at Affordable prices and our aim is to provide a <br>healthy and Tasty foods and meals
+                with a kind of Mother's Love.<br>And ofcourse the taste will be unbeatable
+                
+            </p>
+            <br><br><br>
+            <p>
+              We also provide  Catering  Services for any kind of  functions.<br>
+              we assure you that the food items are made with Quality ingredients and at a affordable  price
+            </p>
+            <br>
+            <p>
+                Offers are at great Demand!!! , We provide customers a facility of booking table <br>
+                beforehand.Enjoy your food and always engaged with us.Door delivery is available.we provide free door  delivery upto 12 kms
+                Service charges will be fared above 12 Kms.10% Concession will be provided to the catering who orders for 500 people.Check for the Offers available today.
+                <br>Customer card  will be  provided for regular customers<br>
+                Quality foods are made with quality chefs and we offer international foods and cuisines<br>
+                Check the details of contact number and locations of our Restaurant.Hurrry......... Up.
+            </p>
+            </div>
+            
+
+            
+               
+                   
+
+                      
+
+
+
+
+<div class="scrollcont">
+    <marquee behaviour="scroll" direction="up">
+        <ul>
+            <li><a href="#">2%  offer on Freshers Biriyani   </a></li><br>
+            <li><a href="#">20%  offer on Bakery items for the new visitors   </a></li><br>
+            <li><a href="#">Discount will be  provided on Fast Foods for the customers ordering above 1000rs </a></li><br>
+            <li><a href="#">Earn points in customer card and enjoy many offer meals</a></li><br>
+            <li><a href="#">Use card  points  for delivery too </a></li><br>
+            <li><a href="#">Click here to get to know about Diwali Offers </a></li><br>
+            <li><a href="#">Snack offers for krishna Jayanti</a></li><br>
+            <li><a href="#">Note about Upcoming functions and festivals</a></li><br>
+            <li><a href="#">Today  offers</a></li><br>
+            <li><a href="#">Cake offers</a></li><br>
+            <p>
+                Best Quality<br>
+                Legal prices<br>
+                Awesome Taste
+            </p>
+
+        </ul>
+      
+    </marquee>
+</div>
+
+<div class="bottom">
+    <p>@copyrights Reserved</p>
+
+        <div class="social_links">
+            <img src="facebook.jpg" alt="facebook" class="facebook">
+            <a href="">FACEBOOK</a>
+            <img src="whatsapp.jpg" alt="whatsapp" class="whatsapp">
+            <a href="">WHATSAPP</a>
+            <img src="instagram.jpg" alt="instagram" class="instagram">
+            <a href="">INSTAGRAM</a>
+            <img src="twitter.jpg" alt="twitter" class="twitter">
+            <a href="">TWITTER</a>
+
+        </div>
+
+               
+
+</div>
+<script src="more.js"></script>
+   
+</body>
+
+</html>
